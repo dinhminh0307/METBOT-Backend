@@ -1,4 +1,4 @@
-fastapi
-uvicorn
+flask
 transformers
+flask_cors
 torch
