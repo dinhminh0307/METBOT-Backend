@@ -1,0 +1,6 @@
+
+src/results/checkpoint-24/optimizer.pt
+src/results/checkpoint-24/model.safetensors
+src/fine-tuned-gpt2/model.safetensors
+src/results/checkpoint-13/model.safetensors
+src/results/checkpoint-13/optimizer.pt
