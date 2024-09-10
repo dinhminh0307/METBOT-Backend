@@ -2,8 +2,8 @@ from transformers import GPT2Tokenizer, GPT2LMHeadModel, TextDataset, DataCollat
 import torch
 
 def fine_tune_gpt2(dataset_path):
-    tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
-    model = GPT2LMHeadModel.from_pretrained('gpt2')
+    tokenizer = GPT2Tokenizer.from_pretrained('distilgpt2')
+    model = GPT2LMHeadModel.from_pretrained('distilgpt2')
 
     dataset = TextDataset(
         tokenizer=tokenizer,
@@ -19,7 +19,7 @@ def fine_tune_gpt2(dataset_path):
         output_dir='./results',
         overwrite_output_dir=True,
         num_train_epochs=12,
-        per_device_train_batch_size=2,
+        per_device_train_batch_size=1,
         save_steps=10_000,
         save_total_limit=2,
     )
